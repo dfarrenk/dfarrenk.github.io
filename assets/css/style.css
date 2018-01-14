@@ -10,6 +10,46 @@ body {
   box-sizing: border-box;
 }
 
+
+
+/* sticky footer styling */
+
+/* http://ryanfait.com/html5-sticky-footer/ */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+/* end sticky footer styling */
+
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* end hover styling */
+
 /* general */
 
 .container {
@@ -240,98 +280,122 @@ input[type=submit] {
 
 @media screen and (max-width: 980px) {
 
-	.container {
-		max-width: 720px;
-	}
+  .container {
+    max-width: 720px;
+  }
 
-	.main-section {
-		width: 420px;
-	}
+  .main-section {
+    width: 420px;
+  }
 
-	.auth-image {
-		width: 100%	;
-		margin-bottom: 12px;
-	}
+  .auth-image {
+    width: 100%;
+    margin-bottom: 12px;
+  }
 
-	.work {
-		width: 100%;
-	}
+  .work {
+    width: 100%;
+  }
 
 
 }
 
 @media screen and (max-width: 768px) {
-	header {
-		position: static;
-	}
+  header {
+    position: static;
+  }
 
-	.main-section {
- 		max-width: none;
-		width: 100%;
-	}
+  .main-section {
+    max-width: none;
+    width: 100%;
+  }
 
-	.sidebar {
-		max-width: none;
-		width: 100%;
-		margin-bottom: 40px;
-	}
+  .sidebar {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 
-	.auth-image {
-		width: 330px;
-		height: 250px;
-	}
+  .auth-image {
+    width: 330px;
+    height: 250px;
+  }
 
-	.work {
-		width: 48%;
-	}
+  .work {
+    width: 48%;
+  }
 
-	.work:nth-child(even) {
-  		margin-right: 4%;
-	}
+  .work:nth-child(even) {
+    margin-right: 4%;
+  }
 
 
 
 }
 
 @media screen and (max-width: 640px) {
-	#main-container {
-		padding-top: 175px;
-	}
+  #main-container {
+    padding-top: 175px;
+  }
 
-	#logo {
-		width: 100%;
-	}
+  #logo {
+    width: 100%;
+  }
 
-	nav {
-		width: 100%;
-		margin-top: 15px;
-		padding-bottom: 15px;
-	}
+  nav {
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
 
-	nav a {
-		width: 30%;
-		text-align: center;
-	}
+  nav a {
+    width: 30%;
+    text-align: center;
+  }
 
 
-	.auth-image {
-		width: 100%;
-		height: auto;
-	}
+  .auth-image {
+    width: 100%;
+    height: auto;
+  }
 
-	.main-section {
- 		margin: 0 3%;
-		width: 94%;
-	}
+  .main-section {
+    margin: 0 3%;
+    width: 94%;
+  }
 
-	.sidebar{
-		margin: 40px 3%;
-		width: 94%;
-	}
+  .sidebar {
+    margin: 40px 3%;
+    width: 94%;
+  }
 
-	.work {
-		width: 100%;
-	}
+  .work {
+    width: 100%;
+  }
 
 
 }
+
+
+/* sticky footer styling */
+
+/* http://ryanfait.com/html5-sticky-footer/ */
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+/* end sticky footer styling */
